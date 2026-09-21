@@ -17,7 +17,7 @@ A student walkthrough for setting up ngrok to tunnel a local listener for use in
 
 ## What ngrok does
 
-`ngrok` creates a secure tunnel from a public internet address to a service running on your local machine, which normally sits behind NAT/a firewall and isn't reachable from outside. This is useful for testing webhooks, demoing local apps — and in a security lab context, for making a local reverse-shell listener reachable by a remote target.
+`ngrok` creates a secure tunnel from a public internet address to a service running on your local machine, which normally sits behind NAT/a firewall and isn't reachable from outside. This is useful for testing webhooks, demoing local apps and in a security lab context, for making a local reverse-shell listener reachable by a remote target.
 
 ## 1. Install ngrok (Linux)
 
@@ -90,8 +90,8 @@ Swap in whatever host:port ngrok actually gave you.
 
 ## 6. Things to notice
 
-- The **port changes every time** you restart `ngrok tcp` on the free tier — update the payload each session, unless you're on a paid plan with a reserved TCP address.
-- ngrok acts as a relay — traffic passes through ngrok's infrastructure, not directly peer-to-peer.
+- The **port changes every time** you restart `ngrok tcp` on the free tier: update the payload each session, unless you're on a paid plan with a reserved TCP address.
+- ngrok acts as a relay: traffic passes through ngrok's infrastructure, not directly peer-to-peer.
 - This is what lets a listener behind a home router/NAT/firewall receive a connection from outside, without any port forwarding on the router itself.
 - The web inspector at `http://127.0.0.1:4040` only shows **HTTP** tunnel traffic, not TCP/shell traffic — worth mentioning so no one goes looking for the shell session there.
 
@@ -101,4 +101,4 @@ Swap in whatever host:port ngrok actually gave you.
 
 ---
 
-*Prepared as a student reference for a cybersecurity lab session.*
+*Prepared as a student reference for Korlink cybersecurity lab session.*
