@@ -1,5 +1,8 @@
 # Using ngrok to Expose a Local Listener (Lab Tutorial)
 
+> **Portfolio context:** A learning tutorial on secure tunnelling concepts and lab connectivity. Keep tunnels temporary, expose only the specific service required for a controlled exercise, and shut them down when finished. Never publish authtokens or other credentials.
+
+
 A student walkthrough for setting up ngrok to tunnel a local listener for use in an **authorized** security lab / CTF environment.
 
 ## Table of Contents
